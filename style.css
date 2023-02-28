@@ -1,0 +1,138 @@
+
+
+/* --------------------------------------- CSS RESET --------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+
+/* --------------------------------------- Empieza el css  --------------------------------------- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+textarea {
+  max-width: 1200px;
+  width: 90%;
+  height: 250px;
+  font-size: 16px;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  resize: none;
+}
+
+.container-contadores {
+  display:grid;
+  grid-gap: 3px;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(6, minmax(10px, 1fr));
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #d3d3d3;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #a81f2d;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .container-contadores {
+
+    grid-template-columns: repeat(3, minmax(10px, 1fr));
+
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .container-contadores {
+
+    grid-template-columns:1fr;
+
+  }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contador de palabras</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Contador de palabras</h1>
+    <h3>
+      Introduzca el texto y los contadores se actualizaran automaticamente,
+      puede borrar el texto con el boton rojo.
+    </h3>
+    <div class="container-contadores">
+      <p><span id="num-palabras">0</span> Palabras</p>
+      <p><span id="num-espacios">0</span> Espacios</p>
+      <p><span id="num-caracteres">0</span> Caracteres</p>
+      <p><span id="num-acentos">0</span> Acentos</p>
+      <p><span id="num-parrafos">0</span> Párrafos</p>
+      <p><span id="tiempo-lectura">0</span> Minutos de lectura</p>
+    </div>
+    <textarea id="texto" placeholder="Escribe aquí..."></textarea>
+    <button id="boton-borrar">Borrar</button>
+    <script src="script.js"></script>
+  </body>
+</html>
