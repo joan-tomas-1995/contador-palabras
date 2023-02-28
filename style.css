@@ -59,21 +59,22 @@ body {
   background-color: #f5f5f5;
 }
 
-h1 {
+.titulo {
   font-size: 36px;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-h3 {
+.descripcion {
   font-size: 16px;
   text-align: center;
   margin-bottom: 20px;
 }
 
+/* TEXTO CONTENEDOR TEXTAREA INPUT */
 
-textarea {
+.texto-input {
   max-width: 1200px;
   width: 90%;
   height: 250px;
@@ -88,6 +89,8 @@ textarea {
   resize: none;
 }
 
+/* CONTENEDOR CON TODOS LOS PARAMETROS */
+
 .container-contadores {
   display:grid;
   grid-gap: 3px;
@@ -95,14 +98,23 @@ textarea {
   align-items: center;
   grid-template-columns: repeat(6, minmax(10px, 1fr));
   padding: 10px;
-  margin-bottom: 20px;
+  margin: 20px;
   border-radius: 5px;
   background-color: #d3d3d3;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 
-button {
+.numeros{
+  margin: 4x;
+  padding: 4px;
+  border-bottom: 2px solid rgb(255, 125, 125);
+  border-radius: 4px;
+}
+
+/* BOTON BORRAR TODO EL TEXTO */
+
+.boton {
   font-size: 18px;
   padding: 10px 20px;
   background-color: #dc3545;
@@ -115,9 +127,11 @@ button {
   margin-right: 10px;
 }
 
-button:hover {
+.boton:hover {
   background-color: #a81f2d;
 }
+
+/* MEDIA QUERY TABLET */
 
 
 @media only screen and (max-width: 900px) {
@@ -128,11 +142,13 @@ button:hover {
   }
 }
 
+/* MEDIA QUERY MOVIL */
 
 @media only screen and (max-width: 480px) {
   .container-contadores {
 
     grid-template-columns:1fr;
+    justify-items: flex-start;
 
   }
 }

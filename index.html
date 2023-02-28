@@ -8,21 +8,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Contador de palabras</h1>
-    <h3>
+    <h1 class="titulo">Contador de palabras</h1>
+    <h3 class="descripcion">
       Introduzca el texto y los contadores se actualizaran automaticamente,
       puede borrar el texto con el boton rojo.
     </h3>
     <div class="container-contadores">
-      <p><span id="num-palabras">0</span> Palabras</p>
-      <p><span id="num-espacios">0</span> Espacios</p>
-      <p><span id="num-caracteres">0</span> Caracteres</p>
-      <p><span id="num-acentos">0</span> Acentos</p>
-      <p><span id="num-parrafos">0</span> Párrafos</p>
-      <p><span id="tiempo-lectura">0</span> Minutos de lectura</p>
+      <p><span class="numeros" id="num-palabras">0</span> Palabras</p>
+      <p><span class="numeros" id="num-espacios">0</span> Espacios</p>
+      <p><span class="numeros" id="num-caracteres">0</span> Caracteres</p>
+      <p><span class="numeros" id="num-acentos">0</span> Acentos</p>
+      <p><span class="numeros" id="num-parrafos">0</span> Párrafos</p>
+      <p><span class="numeros" id="tiempo-lectura">0</span> Min. de lectura</p>
     </div>
-    <textarea id="texto" placeholder="Escribe aquí..."></textarea>
-    <button id="boton-borrar">Borrar</button>
+    <textarea class="texto-input" id="texto" placeholder="Escribe aquí..."></textarea>
+    <button class="boton" id="boton-borrar">Borrar</button>
     <script src="script.js"></script>
   </body>
 </html>
