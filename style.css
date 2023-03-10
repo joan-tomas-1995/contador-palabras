@@ -86,7 +86,8 @@ body {
   background-color: #fff;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  resize: none;
+  resize:vertical;
+
 }
 
 /* CONTENEDOR CON TODOS LOS PARAMETROS */
@@ -108,7 +109,8 @@ body {
 .numeros{
   margin: 4x;
   padding: 4px;
-  border-bottom: 2px solid rgb(255, 125, 125);
+  border-bottom: 2px solid #b2b2b2;
+  border-top: 2px solid #b2b2b2;
   border-radius: 4px;
 }
 
