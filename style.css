@@ -1,5 +1,3 @@
-
-
 /* --------------------------------------- CSS RESET --------------------------------------- */
 *,
 *::before,
@@ -52,7 +50,6 @@ h6 {
   overflow-wrap: break-word;
 }
 
-
 /* --------------------------------------- Empieza el css  --------------------------------------- */
 body {
   font-family: Arial, sans-serif;
@@ -86,14 +83,13 @@ body {
   background-color: #fff;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  resize:vertical;
-
+  resize: vertical;
 }
 
 /* CONTENEDOR CON TODOS LOS PARAMETROS */
 
 .container-contadores {
-  display:grid;
+  display: grid;
   grid-gap: 3px;
   justify-items: center;
   align-items: center;
@@ -102,16 +98,77 @@ body {
   margin: 20px;
   border-radius: 5px;
   background-color: #d3d3d3;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-
-.numeros{
+.numeros {
   margin: 4x;
   padding: 4px;
   border-bottom: 2px solid #b2b2b2;
   border-top: 2px solid #b2b2b2;
   border-radius: 4px;
+}
+/* BOTON COPIAR TODO EL TEXTO */
+
+.container-botones {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.boton2 {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #5458d7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+}
+
+.boton2:hover {
+  background-color: #2b30cf;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  text-align: center;
+  background-color: #fefefe;
+  margin: 25% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -18px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* BOTON BORRAR TODO EL TEXTO */
@@ -135,12 +192,9 @@ body {
 
 /* MEDIA QUERY TABLET */
 
-
 @media only screen and (max-width: 900px) {
   .container-contadores {
-
     grid-template-columns: repeat(3, minmax(10px, 1fr));
-
   }
 }
 
@@ -148,9 +202,7 @@ body {
 
 @media only screen and (max-width: 480px) {
   .container-contadores {
-
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr;
     justify-items: flex-start;
-
   }
 }
